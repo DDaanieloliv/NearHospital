@@ -33,6 +33,10 @@
             height: 100vh;
             width: 100%;
         }
+
+        #hamburger {
+          margin-top: -50px;
+        }
     </style>
 </head>
 <body>
@@ -40,10 +44,10 @@
 
     <header id="header">
     <nav id="nav">
-    <button id="btn"></button>
+    <button id="btn">
   
     <span id="hamburger"></span>
-  
+  </button>
     <ul id="cardapio">  
       <li><a href="map.html" class="menu">Mapa Principal</a></li>
       <li><a href="listaHospitais.html" class="menu">Lista de Hospitais</a></li>
@@ -55,19 +59,26 @@
 
   <div>
         <a href="index.html">
-          <img id="img" height="19" width="19" src="images/botao-de-seta-para-a-esquerda-do-teclado.jpeg" alt=" Seta para esquerda">
+          <img id="img" height="19" width="19" src="images/botao-voltar.png" alt=" Seta para esquerda">
         </a>  
 
-          <h2 id="h2">NearHospital</h2>
+          <!-- <h2 id="h2">NearHospital</h2> -->
           
-          <img id="images" width="19" height="19" src="images/barras.jpeg" alt="Barra do hamburger">
+          <!-- <img id="images" width="19" height="19" src="images/barras.jpeg" alt="Barra do hamburger"> -->
         <br>
   </div>
   
-  
-  <input type="text" placeholder="Insira Especialidade desejada" size="20px" id="inputEspecialidade" style="padding: 0.7rem; border-radius: 5px;">
-  <button onclick="Iniciando();" style="padding: 0.5; ">Pesquisar</button>
+  <style>
+    #input{
+      margin-top: 40px;
+    }
+  </style>
 
+  <div id="input">
+    <input type="text" placeholder="Insira Especialidade desejada" size="20px" id="inputEspecialidade" style="padding: 0.7rem; border-radius: 5px;">
+    <button onclick="Iniciando();" style="padding: 0.5; ">Pesquisar</button>
+  </div>
+  
   <div id="listaHosp">
     
   </div>
