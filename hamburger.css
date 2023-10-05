@@ -1,4 +1,7 @@
 
+body{
+  min-width: 348px;
+}
 
 #lat{
   padding-left: 5px;
@@ -30,7 +33,7 @@
   position: relative;
 
   padding-top: 5px;
-  margin-left: 8px;
+  margin-left: 20px;
   margin-top: 10px;
 }
 
@@ -71,7 +74,10 @@ ul
 body a{
 color: black;
 font-family: sans-serif;
+text-align: center;
+
 }
+
 
 .menu
 {
@@ -93,12 +99,14 @@ justify-content: space-between;
 background: #e7e7e7;
 border-radius: 10px 20px 10px ;
 border: black solid 1px;
+justify-content: center;
 }
 
-#cardapio {
-display: flex;
-list-style: none  ;
-gap: .5rem;
+#cardapio 
+{
+  display: flex;
+  list-style: none ;
+  gap: .5rem; 
 }
 
 
@@ -111,7 +119,19 @@ padding: .5rem;
 @media (max-width: 600px ) {
 #btn {
   display: block;
+  position: fixed;
+color: black;
+top: 40px;
+right: 20px;
 }
+
+#h2{
+  position: fixed;
+  top: 20px;
+  left: 35%;
+  z-index: 100;
+}
+
 #cardapio {
   display: block;
   /* display: block; */
@@ -131,6 +151,7 @@ padding: .5rem;
    visibility: visible;
    overflow-y: auto;
 }
+
 }
 
 #cardapio a{
